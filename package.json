@@ -1,19 +1,24 @@
 {
-  "name": "reconnecting-sockjs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrogalskyi/reconnecting-sockjs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mrogalskyi/reconnecting-sockjs/issues"
-  },
-  "homepage": "https://github.com/mrogalskyi/reconnecting-sockjs#readme"
+    "name": "reconnecting-sockjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mrogalskyi/reconnecting-sockjs.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mrogalskyi/reconnecting-sockjs/issues"
+    },
+    "homepage": "https://github.com/mrogalskyi/reconnecting-sockjs#readme",
+    "dependencies": {
+        "@types/sockjs": "0.3.31",
+        "sockjs-client": "0.3.19",
+        "typescript": "^2.8.3"
+    }
 }

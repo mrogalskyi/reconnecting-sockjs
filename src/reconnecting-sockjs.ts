@@ -1,3 +1,5 @@
+import * as SockJS from 'sockjs';
+
 class ReconnectingSockJS {
     static debugAll = false;
     static CONNECTING = WebSocket.CONNECTING;
@@ -5,11 +7,11 @@ class ReconnectingSockJS {
     static CLOSING = WebSocket.CLOSING;
     static CLOSED = WebSocket.CLOSED;
 
-    readyState: WebSocket["CONNECTING"];
-    reconnectAttempts: 0;
+    readyState = WebSocket.CONNECTING;
+    reconnectAttempts = 0;
     protocol = null;
 
-    private ws;
+    private ws: SockJS;
     private forcedClose = false;
     private timedOut = false;
 
